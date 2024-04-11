@@ -29,11 +29,11 @@ listContainer.addEventListener("click", function(e){
 }, false);
 
 function saveData() {
-    localStorage.setItem("data", listContainer.innerHTML);
+    localStorage.setItem("datastorage", listContainer.innerHTML);
 }
 
 function showNote() {
-    listContainer.innerHTML = localStorage.getItem("data");
+    listContainer.innerHTML = localStorage.getItem("datastorage");
 }
 
 showNote();
